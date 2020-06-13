@@ -102,7 +102,7 @@ function authenticator(req, res, next) {
 
 app.post("/api/login", (req, res) => {
   const { username, password } = req.body;
-  if (username === "Fred Flintstone" && password === "Yabbadabbadoo") {
+  if (username === "Lambda School" && password === "yabbadabbadoo") {
     req.loggedIn = true;
     setTimeout(() => {
       res.status(200).json({
